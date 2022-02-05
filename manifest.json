@@ -1,0 +1,19 @@
+{
+    "name": "复制标题链接",
+    "description": "使用 Markdown 格式复制标题链接",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["activeTab", "scripting"],
+    "commands": {
+        "run-copy": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Y",
+                "mac": "Command+Shift+Y"
+            },
+            "description": "执行复制标题链接"
+        }
+    }
+}
